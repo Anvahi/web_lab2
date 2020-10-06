@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Abrade; /* Имя шрифта */
+    src: url(font/Abrade-Black.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Republic; /* Имя шрифта */
+    src: url(font/SF\ New\ Republic\ Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Regular; /* Имя шрифта */
+    src: url(font/Singel\ Light.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: RegB; /* Имя шрифта */
+    src: url(font/Singel\ Bold.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Mollen; /* Имя шрифта */
+    src: url(font/Mollen\ Personal\ Use-Light.otf); /* Путь к файлу со шрифтом */
+}
+
+/* body {
+    background-color: #eff0f2;
+} */
+
+#back {
+    background-color: #eff0f2;
+}
+
+header {
+    width: 100%;
+    height: 112px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-top: 20px;
+    list-style-type: none;
+}
+  
+.menu .me {
+    margin-left: 85%;
+    align-self: center;
+}
+
+.menu .SHOPNO {
+    align-self: flex-end;
+}
+
+.naming {
+    font-size: 33px;
+    text-align: center;
+    font-family: Abrade;
+    color: #505050;
+    text-shadow: 3px 6px 10px #9d9fa5;
+    height: 520px;
+}
+
+.naming span {
+    background-color: #b2f2ee;
+}
+
+.naming .text {
+    margin-top: 186px;
+}
+
+.naming .liq {
+    margin-top: 114px;
+}
+
+.naming button {
+    border: 2px solid #777879;
+    border-radius: 1px;
+    color: #505050;
+    background-color: #eff0f2;
+    font-family: Republic;
+    padding: 10px 45px;
+}
+
+.naming .liq figure {
+    position: absolute;
+    left: 1050px;
+    top: 600px;
+    text-shadow: 3px 6px 10px #9d9fa5;
+}
+
+.about_us h1 {
+    padding-top: 70px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+}
+
+.about_us h6 {
+    margin-top: -13px;
+    font-size: 14px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.info {
+    margin-left: 750px;
+    margin-right: 200px;
+    text-align: justify;
+}
+
+.info h4, .info h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: RegB;
+}
+
+.info p{
+    color: #515252;
+    font-family: Mollen;
+    font-size: 14px;
+}
+
+
+
+/* slider  */
+.sl {
+    text-align: left;
+    width: 383px;
+    height: 473px;
+    overflow: hidden;
+}
+
+.middle {
+    text-align: left;
+    margin-left: 140px;
+}
+
+.navigation {
+    position: absolute;
+    top: 1520px;
+    left: 300px;
+    display: flex;
+}
+
+.bar {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #bbb;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.bar:hover {
+    background: #71f6eb;
+    transform: scale(1.2);
+}
+
+input[name = "slider"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.6s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#switch1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#switch2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#switch3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#switch4:checked ~ .s1 {
+    margin-left: -75%;
+}
+/* end slide  */
