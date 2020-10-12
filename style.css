@@ -23,9 +23,10 @@
     src: url(font/Mollen\ Personal\ Use-Light.otf); /* Путь к файлу со шрифтом */
 }
 
-/* body {
+body {
     background-color: #eff0f2;
-} */
+    margin: 0;
+}
 
 #back {
     background-color: #eff0f2;
@@ -38,6 +39,7 @@ header {
 
 .menu {
     display: flex;
+    margin: 0;
 }
 
 .menu li {
@@ -108,18 +110,20 @@ header {
 }
 
 .content_about {
+    padding-left: 200px;
+    padding-right: 100px;
+    /* padding: 0 200px; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     align-content: stretch;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .info {
-    margin-left: 300px;
-    margin-right: 200px;
     text-align: justify;
-    border: 1px solid black;
+    flex-grow: 5;
+    /* border: 1px solid black; */
 }
 
 .info h4, .info h3{
@@ -137,21 +141,21 @@ header {
 /* slider  */
 .sl {
     /* text-align: left; */
-    width: 100%;
+    flex-grow: 3;
+    margin-right: 30px;
     height: 100%;
     overflow: hidden;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .middle {
     /* text-align: left; */
-    margin-left: 140px;
 }
 
 .navigation {
     position: absolute;
-    top: 1440px;
-    left: 280px;
+    top: 1500px;
+    left: 335px;
     display: flex;
 }
 
@@ -187,8 +191,8 @@ input[name = "slider"] {
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 
 }
 
