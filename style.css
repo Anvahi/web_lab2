@@ -1,35 +1,31 @@
 @font-face {
-    font-family: Abrade; /* Имя шрифта */
-    src: url(font/Abrade-Black.ttf); /* Путь к файлу со шрифтом */
+    font-family: Abrade;
+    src: url(font/Abrade-Black.ttf);
 }
 
 @font-face {
-    font-family: Republic; /* Имя шрифта */
-    src: url(font/SF\ New\ Republic\ Bold.ttf); /* Путь к файлу со шрифтом */
+    font-family: Republic;
+    src: url(font/SF\ New\ Republic\ Bold.ttf);
 }
 
 @font-face {
-    font-family: Regular; /* Имя шрифта */
-    src: url(font/Singel\ Light.otf); /* Путь к файлу со шрифтом */
+    font-family: Regular;
+    src: url(font/Singel\ Light.otf);
 }
 
 @font-face {
-    font-family: RegB; /* Имя шрифта */
-    src: url(font/Singel\ Bold.otf); /* Путь к файлу со шрифтом */
+    font-family: RegB;
+    src: url(font/Singel\ Bold.otf); 
 }
 
 @font-face {
-    font-family: Mollen; /* Имя шрифта */
-    src: url(font/Mollen\ Personal\ Use-Light.otf); /* Путь к файлу со шрифтом */
+    font-family: Mollen;
+    src: url(font/Mollen\ Personal\ Use-Light.otf);
 }
 
 body {
     background-color: #eff0f2;
     margin: 0;
-}
-
-#back {
-    background-color: #eff0f2;
 }
 
 header {
@@ -93,6 +89,11 @@ header {
     text-shadow: 3px 6px 10px #9d9fa5;
 }
 
+.about_us {
+    background-color: #F8FAFA;
+    height: 740px;
+}
+
 .about_us h1 {
     padding-top: 70px;
     font-size: 28px;
@@ -110,20 +111,18 @@ header {
 }
 
 .content_about {
-    padding-left: 200px;
-    padding-right: 100px;
-    /* padding: 0 200px; */
+    padding-left: 240px;
+    padding-right: 220px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     align-content: stretch;
-    /* border: 1px solid black; */
 }
 
 .info {
     text-align: justify;
     flex-grow: 5;
-    /* border: 1px solid black; */
+    width: 1300px;
 }
 
 .info h4, .info h3{
@@ -140,22 +139,16 @@ header {
 
 /* slider  */
 .sl {
-    /* text-align: left; */
     flex-grow: 3;
     margin-right: 30px;
     height: 100%;
     overflow: hidden;
-    /* border: 1px solid black; */
-}
-
-.middle {
-    /* text-align: left; */
 }
 
 .navigation {
     position: absolute;
-    top: 1500px;
-    left: 335px;
+    top: 1480px;
+    left: 382px;
     display: flex;
 }
 
@@ -183,17 +176,13 @@ input[name = "slider"] {
     width: 400%;
     height: 100%;
     display: flex;
+    box-shadow: #000;
+    /* text-shadow: 10px 10px 10px #000; */
 }
 
 .slide {
     width: 25%;
     transition: all 0.6s ease;
-}
-
-.slide img {
-    /* width: 100%;
-    height: 100%; */
-
 }
 
 #switch1:checked ~ .s1 {
@@ -212,3 +201,140 @@ input[name = "slider"] {
     margin-left: -75%;
 }
 /* end slide  */
+
+.featured {
+    background-color: #ffffff;
+}
+
+.featured h1 {
+    padding-top: 70px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.featured h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 70px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.product {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.product img {
+    padding: 6px;
+}
+
+.services {
+    background-color: #F9FBFB;
+}
+
+.services h1 {
+    padding-top: 70px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.services h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 70px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.serv_img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+
+
+/* .line1 {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.fir {
+    background: url("img/service-1.png") no-repeat center center;
+    margin-right: auto;
+    width: 652px;
+    height: 422px;
+    margin-top: 13px;
+    margin-left: 190px;
+    /* padding: 0 70px; */
+}
+
+.sec {
+    background: url("img/service-2.png") no-repeat center center;
+    margin-left: auto;
+    width: 474px;
+    height: 422px;
+    margin-top: 13px;
+    margin-right: 190px;
+    /* padding: 0 70px; */
+}
+
+.thir {
+    background: url("img/service-3.png") no-repeat center center;
+    margin-right: auto;
+    width: 652px;
+    height: 371px;
+    margin-top: 13px;
+    margin-left: 190px;
+}
+.fou {
+    background: url("img/service-4.png") no-repeat center center;
+    margin-left: auto;
+    width: 474px;
+    height: 370px;
+    margin-top: 13px;
+    margin-right: 190px;
+}
+.fif {
+    background: url("img/service-5.png") no-repeat center center;
+    margin-right: auto;
+    width: 472px;
+    height: 370px;
+    margin-top: 13px;
+    margin-left: 190px;
+}
+.six {
+    background: url("img/service-6.png") no-repeat center center;
+    margin-left: auto;
+    width: 651px;
+    height: 371px;
+    margin-top: 13px;
+    margin-right: 190px;
+}
+
+.ser {
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 46, 46, 0.85);
+    /* padding-left: 65px;
+    padding-top: 180px; */
+    transition: all 0.6s ease;
+}
