@@ -147,7 +147,7 @@ header {
     font-size: 14px;
 }
 
-/* slider  */
+/* slider 1  */
 .sl {
     flex-grow: 3;
     margin-right: 30px;
@@ -341,6 +341,52 @@ input[name = "slider"] {
     margin-right: 104px;
 }
 
+.ser_f {
+    width: 100%;
+    height: 100%;
+    background: rgba(113, 245, 234, 0.97);
+    transition: all 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ser_f .ser_t {
+    padding-left: 66px;
+    padding-bottom: 79px;
+}
+
+.ser_f .titleh {
+    color: #122625;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    margin-top: 0;
+    font-size: 20px;
+    font-family: Venturis;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.ser_f .ser_t .text_l {
+    margin: 0;
+    color: #122625;
+    width: 432px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+    font-family: Museo;
+    align-self: flex-start;
+}
+
+.btn_f {
+    background: url("img/X.png") no-repeat center left;
+    cursor: pointer;
+    padding-bottom: 25px;
+    margin-left: 68px;
+    margin-bottom: 56px;
+    width: 30px;
+}
+
 .ser {
     width: 100%;
     height: 100%;
@@ -370,7 +416,8 @@ input[name = "slider"] {
 .ser .ser_t .text_l {
     margin: 0;
     color: #f6f6f6;
-    width: 420px;
+    width: 370px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     font-size: 15px;
     font-family: Museo;
@@ -380,7 +427,8 @@ input[name = "slider"] {
 .ser .ser_t .text_r {
     margin: 0;
     color: #f6f6f6;
-    width: 320px;
+    width: 250px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     font-size: 15px;
     font-family: Museo;
@@ -404,16 +452,215 @@ input[name = "slider"] {
     padding-bottom: 65px;
 }
 
-.service__btn {
-    display: block;
-    background: url(../img/arrow.png) no-repeat center right;
-    width: 160px;
-    margin-top: 49px;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    font-size: 19px;
-    letter-spacing: 0.02em;
-    color: #fff;
-    cursor: pointer;
+.team {
+    background-color: #ffffff;
 }
+
+.team h1 {
+    padding-top: 70px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+    font-stretch: ultra-expanded;
+}
+
+.team h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 70px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.guys {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    max-width: 1139px;
+    margin: 0 auto;
+}
+
+.guys img {
+    padding: 8px;
+}
+
+.guys img:hover {
+
+}
+
+.says {
+    background-color: #ffffff;
+    height: 760px;
+}
+
+.says h1 {
+    padding-top: 70px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+    font-stretch: ultra-expanded;
+}
+
+.says h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 70px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.say_sl {
+    padding-left: 240px;
+    padding-right: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+/* Start slider 2*/
+
+.guy_sl {
+    flex-grow: 3;
+    margin-right: 30px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.guy_sl .part_right {
+    background-image: url("img/block3.png");
+}
+
+.guy_sl .navigation {
+    position: absolute;
+    top: 6230px;
+    left: 382px;
+    display: flex;
+}
+
+.guy_sl .bar {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #bbb;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.guy_sl .bar:hover {
+    background: #71f6eb;
+    transform: scale(1.2);
+}
+
+input[name = "slider_says"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.guy_sl .slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    box-shadow: #000;
+}
+
+.guy_sl .slide {
+    width: 25%;
+    transition: all 0.6s ease;
+    align-items: center;
+}
+
+#swit1:checked ~ .ss1 {
+    margin-left: 0;
+}
+
+#swit2:checked ~ .ss1 {
+    margin-left: -25%;
+}
+
+#swit3:checked ~ .ss1 {
+    margin-left: -50%;
+}
+
+#swit4:checked ~ .ss1 {
+    margin-left: -75%;
+}
+/* end slider 2 */
+
+/* start slider 3 */
+/* .text_sl {
+    flex-grow: 3;
+    margin-right: 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text_sl .navigation {
+    position: absolute;
+    top: 6230px;
+    left: 600px;
+    display: flex;
+}
+
+.text_sl .bar {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #bbb;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.text_sl .bar:hover {
+    background: #71f6eb;
+    transform: scale(1.2);
+}
+
+input[name = "slider_says_text"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.text_sl .slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    box-shadow: #000;
+    /* text-shadow: 10px 10px 10px #000;
+}
+
+.text_sl .slide {
+    background-color: #EAEBED;
+    width: 25%;
+    transition: all 0.6s ease;
+}
+
+#sw1:checked ~ .sss1 {
+    margin-left: 0;
+}
+
+#sw2:checked ~ .sss1 {
+    margin-left: -25%;
+}
+
+#sw3:checked ~ .sss1 {
+    margin-left: -50%;
+}
+
+#sw4:checked ~ .sss1 {
+    margin-left: -75%;
+} */
+
+/* End slider 3 */
