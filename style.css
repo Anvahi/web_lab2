@@ -33,6 +33,16 @@
     src: url(font/VenturisADF-Bold.otf);
 }
 
+@font-face {
+    font-family: PortadaBold;
+    src: url(font/Portada-Bold.ttf);
+}
+
+@font-face {
+    font-family: Portada;
+    src: url(font/Portada.ttf);
+}
+
 body {
     background-color: #eff0f2;
     margin: 0;
@@ -490,12 +500,82 @@ input[name = "slider"] {
     padding: 8px;
 }
 
-.guys img:hover {
+.photo_container {
+    position: relative; 
+}
+
+.speak {
+    display: none;
+    bottom: 30px;
+    left: 23px;
+    background-color: #70f6eb;
+    width: 320px;
+    height: 230px;
+}
+
+.speak h1 {
+    font-family: PortadaBold;
+    font-size: 20px;
+    padding-top: 35px;
+}
+
+.speak span {
+    font-family: Portada;
+    font-size: 14px;
+    font-style: italic;
+    color: #7E7E7E;
+}
+
+.speak p {
+    width: 240px;
+    text-align: center;
+    margin-left: 30px;
+    color: #16312f;
+    font-family: Museo;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.speak ul {
+    display: flex;
 
 }
 
+.si {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.fab {
+    margin-right: 12px;
+    color: #214946;
+}
+
+.far {
+    height: 10px;
+    color: #214946;
+}
+
+.photo_container:hover .speak {
+    position: absolute;
+    display: block;
+}
+
+.speak:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 230px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #70f6eb;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
 .says {
-    background-color: #ffffff;
+    background-color: #F9FBFB;
     height: 760px;
 }
 
@@ -520,8 +600,8 @@ input[name = "slider"] {
 }
 
 .say_sl {
-    padding-left: 240px;
-    padding-right: 220px;
+    padding-left: 180px;
+    padding-right: 150px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -537,14 +617,66 @@ input[name = "slider"] {
     overflow: hidden;
 }
 
+.guy_sl .slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    box-shadow: #000;
+}
+
+.guy_sl .slide {
+    width: 25%;
+    transition: all 0.6s ease;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.guy_sl .part_left {
+    float: left;
+}
+
 .guy_sl .part_right {
     background-image: url("img/block3.png");
+    width: 666px;
+    height: 362px;
+    margin-left: 430px;
+    margin-top: 35px;
+}
+
+.guy_sl .part_right h1 {
+    font-family: PortadaBold;
+    font-size: 20px;
+    margin-left: -80px;
+    padding-top: 90px;;
+}
+
+.guy_sl .part_right span {
+    font-family: Portada;
+    font-size: 14px;
+    font-style: italic;
+    color: #7E7E7E;
+}
+
+.guy_sl .part_right p {
+    width: 500px;
+    text-align: center;
+    margin-left: 30px;
+    color: #6F7070;
+    font-family: Museo;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.guy_sl .part_right img {
+    margin-left: 225px;
 }
 
 .guy_sl .navigation {
     position: absolute;
     top: 6230px;
-    left: 382px;
+    left: 318px;
     display: flex;
 }
 
@@ -568,19 +700,6 @@ input[name = "slider_says"] {
     visibility: hidden;
 }
 
-.guy_sl .slider {
-    width: 400%;
-    height: 100%;
-    display: flex;
-    box-shadow: #000;
-}
-
-.guy_sl .slide {
-    width: 25%;
-    transition: all 0.6s ease;
-    align-items: center;
-}
-
 #swit1:checked ~ .ss1 {
     margin-left: 0;
 }
@@ -598,69 +717,4 @@ input[name = "slider_says"] {
 }
 /* end slider 2 */
 
-/* start slider 3 */
-/* .text_sl {
-    flex-grow: 3;
-    margin-right: 300px;
-    height: 100%;
-    overflow: hidden;
-}
 
-.text_sl .navigation {
-    position: absolute;
-    top: 6230px;
-    left: 600px;
-    display: flex;
-}
-
-.text_sl .bar {
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background: #bbb;
-    cursor: pointer;
-    border-radius: 100%;
-    transition: all 0.4s ease;
-}
-
-.text_sl .bar:hover {
-    background: #71f6eb;
-    transform: scale(1.2);
-}
-
-input[name = "slider_says_text"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-.text_sl .slider {
-    width: 400%;
-    height: 100%;
-    display: flex;
-    box-shadow: #000;
-    /* text-shadow: 10px 10px 10px #000;
-}
-
-.text_sl .slide {
-    background-color: #EAEBED;
-    width: 25%;
-    transition: all 0.6s ease;
-}
-
-#sw1:checked ~ .sss1 {
-    margin-left: 0;
-}
-
-#sw2:checked ~ .sss1 {
-    margin-left: -25%;
-}
-
-#sw3:checked ~ .sss1 {
-    margin-left: -50%;
-}
-
-#sw4:checked ~ .sss1 {
-    margin-left: -75%;
-} */
-
-/* End slider 3 */
