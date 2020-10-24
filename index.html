@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/97de4c5536.js" crossorigin="anonymous"></script> -->
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <title>SHOPNO</title>
   </head>
@@ -24,7 +23,9 @@
         <h1> <span>AGENCY</span> CORPORATE SHOPNO THEME</h1>
         <div class = "liq">
           <button>CONTACT US</button>
-          <figure><img src = "img/glass.png" alt = "glass with blue liquid"></figure>
+          <figure>
+            <img src = "img/glass.png" alt = "glass with blue liquid">
+          </figure>
         </div>
     </section>
     <section class="about_us">
@@ -296,19 +297,80 @@
             </div>
           </div>
           <div class="navigation">
-            <label for="swit1" class = "bar"></label>
-            <label for="swit2" class = "bar"></label>
-            <label for="swit3" class = "bar"></label>
-            <label for="swit4" class = "bar"></label>
+            <div class="radiobutton">
+              <label for="swit1" class = "bar"></label>
+              <label for="swit2" class = "bar"></label>
+              <label for="swit3" class = "bar"></label>
+              <label for="swit4" class = "bar"></label>
+            </div> 
+            <div class="arrows">
+              <div class = "r_s">
+                <i class="fas fa-angle-left sif"></i>
+              </div>
+              <div class="r_s">
+                <i class="fas fa-angle-right sif"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="page-footer">
-      <div class = "container">
-        <a class = "header-email" ></a>
-        <a class = "header-phone"></a>
-    </div>
+    <section class = "partners">
+      <div class = " p_">
+        <img src = "img/partners.png">
+      </div>
+    </section>
+    <section class = "contact_">
+      <div class="forms">
+        <div class="connection">
+          <form class="connect_form">
+            <input type="text" class="contacts__input contacts__input_first" placeholder="Name" required> <span class="contacts__required contacts__required_first"></span>
+            <input type="text" class="contacts__input contacts__input_second" placeholder="Subject" required> <span class="contacts__required contacts__required_second"></span>
+            <input type="email" class="contacts__input contacts__input_third" placeholder="E-mail" required> <span class="contacts__required contacts__required_third"></span>
+            <textarea name="message" id="form" cols="30" rows="4" class="contacts__text" placeholder="Message" required maxlength="500"></textarea> <span class="contacts__required contacts__required_fourth"></span>
+            <input type="submit" class="contacts__btn" value="send message">
+          </form>
+        </div>
+        <div class="map">
+          <p class="contacts__location-text">
+            Adress line 1   
+          </p>
+          <p class="contacts__location-text">
+            Adress line 2   
+          </p>  
+          <p class="contacts__location-text">
+            Phone: +548 945645  
+          </p>  
+          <p class="contacts__location-text">
+            Fax: +456456 54546  
+          </p>  
+          <p class="contacts__location-text">
+            Web: www.designagency.net  
+          </p>  
+          <p class="contacts__location-text">
+            E-mail: info@designagency.net  
+          </p>
+          <iframe class = "map_size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1523.7813327565527!2d34.304843823329385!3d53.304343286127875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4132a83d28f8681d%3A0xd1b982a10bf9b173!2sBryansk%20State%20Technical%20University!5e0!3m2!1sen!2sru!4v1603574366122!5m2!1sen!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer class = "follow_us">
+      <p class = "fu">Follow us</p>
+      <div class = "footer_container">
+        <div class="rect_icon">
+          <i class="fab fa-pinterest-p cvva"></i>
+        </div>
+        <div class="rect_icon">
+          <i class="fab fa-twitter cvva"></i>
+        </div>
+        <div class="rect_icon">
+          <i class="fab fa-facebook-f cvva"></i>
+        </div>
+        <div class="rect_icon">
+          <i class="fab fa-dribbble cvva"></i>
+        </div>
+      </div>
+      <p>Copyright Masum Parvej, All Rights Reserved</p>
     </footer>
   </body>
 </html>
