@@ -147,8 +147,8 @@ header {
 }
 
 .content_about {
-    padding-left: 240px;
-    padding-right: 220px;
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -626,9 +626,7 @@ input[name = "slider"] {
     padding-left: 180px;
     padding-right: 150px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: stretch;
+
     padding-bottom: 120px;
 }
 
@@ -636,9 +634,9 @@ input[name = "slider"] {
 
 .guy_sl {
     flex-grow: 3;
-    margin-right: 30px;
     height: 100%;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .guy_sl .slider {
@@ -700,6 +698,8 @@ input[name = "slider"] {
     position: relative;
     display: flex;
     padding-bottom: 124px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .guy_sl .radiobutton {
@@ -745,10 +745,9 @@ input[name = "slider_says"] {
 }
 
 .arrows {
-    /* position: relative; */
     display: flex;
-    margin-left: 715px;
     height: 70px;
+    margin-right: 200px;
 }
 
 .r_s {
@@ -777,13 +776,13 @@ input[name = "slider_says"] {
 /* Partners */
 
 .partners {
+    display: flex;
     background-color: #ffffff;
-    /* background-color: #F9FBFB; */
     padding: 120px 0;
 }
 
 .p_ {
-    margin-left: 180px;
+    margin: 0 auto;
 }
 
 /* End partners */
@@ -801,7 +800,7 @@ input[name = "slider_says"] {
 	width: 100%;
     justify-content: space-between;
     max-width: 1240px;
-    margin-left: 151px;
+    margin: 0 auto;
 }
 
 .connection {
