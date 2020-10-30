@@ -114,10 +114,10 @@ header {
     padding: 10px 45px;
 }
 
-.naming .liq figure {
-    position: relative;
-    left: 450px;
-    top: -70px;
+.naming .liq img {
+    position: absolute;
+    right: 190px;
+    top: 670px;
     text-shadow: 3px 6px 10px #9d9fa5;
 }
 
@@ -682,7 +682,7 @@ input[name = "slider"] {
 .guy_sl .part_right p {
     width: 500px;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 6%;
     color: #6F7070;
     font-family: Museo;
     font-size: 16px;
@@ -747,7 +747,7 @@ input[name = "slider_says"] {
 .arrows {
     display: flex;
     height: 70px;
-    margin-right: 200px;
+    margin-right: 120px;
     
 }
 
