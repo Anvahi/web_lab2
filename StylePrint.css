@@ -1,0 +1,621 @@
+@font-face {
+    font-family: Abrade;
+    src: url(font/Abrade-Black.ttf);
+}
+
+@font-face {
+    font-family: Republic;
+    src: url(font/SF\ New\ Republic\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(font/Singel\ Light.otf);
+}
+
+@font-face {
+    font-family: RegB;
+    src: url(font/Singel\ Bold.otf); 
+}
+
+@font-face {
+    font-family: Mollen;
+    src: url(font/Mollen\ Personal\ Use-Light.otf);
+}
+
+@font-face {
+    font-family: Museo;
+    src: url(font/MuseoSansRounded100.otf);
+}
+
+@font-face {
+    font-family: Venturis;
+    src: url(font/VenturisADF-Bold.otf);
+}
+
+@font-face {
+    font-family: PortadaBold;
+    src: url(font/Portada-Bold.ttf);
+}
+
+@font-face {
+    font-family: Portada;
+    src: url(font/Portada.ttf);
+}
+
+/* End fonts */
+/* all styles of body */
+
+body {
+    background-color: #eff0f2;
+    margin: 0;
+}
+
+/* header */
+
+header {
+    height: 0px;
+    visibility: hidden;
+}
+
+
+/* End header */
+/* Naming */
+
+.naming {
+    font-size: 33px;
+    text-align: center;
+    font-family: Abrade;
+    color: #505050;
+    height: 100px;
+}
+
+.naming .text {
+    margin-top: 70px;
+}
+
+.naming .liq {
+    visibility: hidden;
+    height: 0;
+}
+
+/* End naming */
+/* About us */
+
+.about_us {
+    background-color: #F8FAFA;
+    height: 650px;
+}
+
+.about_us h1 {
+    padding-top: 130px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+}
+
+.about_us h6 {
+    margin-top: -13px;
+    font-size: 14px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+}
+
+.content_about {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.info {
+    text-align: justify;
+    flex-grow: 5;
+    width: 100%;
+}
+
+.info h4, .info h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: RegB;
+}
+
+.info p{
+    color: #515252;
+    font-family: Mollen;
+    font-size: 22px;
+}
+
+/* slider 1  */
+
+.sl {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+}
+
+/* End slider  */
+/* End about us */
+/* Featured */
+
+.featured {
+    background-color: #ffffff;
+}
+
+.featured h1 {
+    padding-top: 100px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.featured h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 100px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.product {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    max-width: 1139px;
+    margin: 0 auto;
+}
+
+.product img {
+    padding: 6px;
+}
+
+/* End featured */
+/* Services */
+
+.services {
+    background-color: #F9FBFB;
+}
+
+.services h1 {
+    padding-top: 60px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.services h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 60px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.serv_img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+    max-width: 1347px;
+    margin: 0 auto;
+}
+
+.fir {
+    background: url("img/service-1.png") no-repeat center center;
+    margin-right: auto;
+    width: 450px;
+    height: 422px;
+    margin-top: 13px;
+    margin-left: 104px;
+}
+
+.sec {
+    background: url("img/service-2.png") no-repeat center center;
+    margin-left: auto;
+    width: 400px;
+    height: 422px;
+    margin-top: 13px;
+    margin-right: 104px;
+}
+
+.thir {
+    background: url("img/service-3.png") no-repeat center center;
+    margin-right: auto;
+    width: 450px;
+    height: 371px;
+    margin-top: 13px;
+    margin-left: 104px;
+}
+
+.fou {
+    background: url("img/service-4.png") no-repeat center center;
+    margin-left: auto;
+    width: 400px;
+    height: 370px;
+    margin-top: 13px;
+    margin-right: 104px;
+}
+
+.fif {
+    background: url("img/service-5.png") no-repeat center center;
+    margin-right: auto;
+    width: 400px;
+    height: 370px;
+    margin-top: 13px;
+    margin-left: 104px;
+}
+
+.six {
+    background: url("img/service-6.png") no-repeat center center;
+    margin-left: auto;
+    width: 450px;
+    height: 371px;
+    margin-top: 13px;
+    margin-right: 104px;
+}
+
+.ser_f {
+    width: 100%;
+    height: 100%;
+    background: rgba(113, 245, 234, 0.97);
+    transition: all 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ser .titleh {
+    color: #122625;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    margin-top: 0;
+    font-size: 20px;
+    font-family: Venturis;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.ser_f .titleh {
+    color: #122625;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    margin-top: 0;
+    font-size: 20px;
+    font-family: Venturis;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.ser_f .ser_t .text_l {
+    margin: 0;
+    color: #122625;
+    width: 432px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+    font-family: Museo;
+    align-self: flex-start;
+}
+
+.ser .text_l {
+    margin: 0;
+    color: #122625;
+    width: 432px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+    font-family: Museo;
+    align-self: flex-start;
+    padding-bottom: 90px;
+}
+
+.ser .text_r {
+    margin: 0;
+    color: #122625;
+    width: 432px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+    font-family: Museo;
+    align-self: flex-start;
+    padding-bottom: 90px;
+}
+
+.btn_f {
+    display: none;
+}
+
+.serv_btn {
+    display: none;
+
+}
+
+.serv_btn p {
+    display: none;
+}
+
+.btn {
+    display: none;
+
+}
+
+/* End services */
+/* Team */
+
+.team {
+    background-color: #ffffff;
+}
+
+.team h1 {
+    padding-top: 0px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+    font-stretch: ultra-expanded;
+}
+
+.team h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 30px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.guys {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1139px;
+    margin: 0 auto;
+}
+
+.guys img {
+    padding: 8px;
+}
+
+.photo_container {
+    position: relative; 
+}
+
+.photo_container img {
+    width: 63.5%;
+}
+
+.speak {
+    display: none;
+}
+
+
+/* End team */
+/* Says */
+
+.says {
+    background-color: #F9FBFB;
+    height: 700px;
+}
+
+.says h1 {
+    padding-top: 30px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Abrade;
+    text-transform: uppercase;
+    margin: 0;
+    font-stretch: ultra-expanded;
+}
+
+.says h6 {
+    margin-top: 13px;
+    font-size: 14px;
+    padding-bottom: 40px;
+    font-family: Regular;
+    text-align: center;
+    color: #636464;
+    text-transform: uppercase;
+}
+
+.say_sl {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+/* Start slider 2*/
+
+.guy_sl {
+    flex-grow: 3;
+    height: 100%;
+    overflow: hidden;
+}
+
+.guy_sl .slider {
+    height: 100%;
+    display: flex;
+}
+
+.guy_sl .part_left {
+    float: left;
+}
+
+.guy_sl .part_right {
+    height: 362px;
+}
+
+.guy_sl .part_right h1 {
+    font-family: PortadaBold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.guy_sl .part_right p {
+    width: 200px;
+    text-align: center;
+    margin-left: 6%;
+    color: #6F7070;
+    font-family: Museo;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.guy_sl .part_right img {
+    display: none;
+}
+
+.guy_sl .navigation {
+    display: none;
+}
+
+.guy_sl .radiobutton {
+    display: none;
+}
+
+.guy_sl .bar {
+    display: none;
+}
+
+
+.arrows {
+    display: none;
+}
+
+
+/* end slider 2 */
+/* End says */
+/* Partners */
+
+.partners {
+    display: flex;
+    background-color: #ffffff;
+    padding: 120px 0;
+}
+
+.p_ {
+    margin: 0 auto;
+}
+
+/* End partners */
+/* Contact */
+
+.contact_ {
+    background-image: url("img/contacts-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.forms {
+    display: flex;
+	width: 100%;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.connection {
+    display: none;
+}
+
+.map {
+	background: rgba(38, 61, 75, 0.88);
+    color: #c4c8cb;
+    margin-top: 30px;
+}
+
+.contacts__location-text {
+	padding-left: 10px;
+	height: 8px;
+	line-height: 1em;
+	display: block;
+	font-size: 15px;
+	font-family: Museo;
+    font-weight: 100;
+    letter-spacing: 0.03em;
+}
+
+.contacts__location-text:nth-child(5) {
+	margin-top: 40px;
+}
+
+.map_size {
+    display: none;
+
+}
+
+/* End contact */
+/* Follow us */
+
+.follow_us {
+    background-color: #262B2E;
+    height: 315px;
+}
+
+.follow_us .fu {
+    margin-block-start: 0;
+    padding-top: 90px;
+    color: #CACBCB;
+    font-family: Museo;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+}
+
+.rect_icon{
+    width: 45px;
+    height: 40px;
+    background-color: #424648;
+    margin-left: 8px;
+}
+
+.rect_icon:hover {
+    background-color: #6EEEE4;
+}
+
+.rect_icon:hover .cvva {
+    color: #070E0D;
+}
+
+.cvva {
+    color: #BBB8B9;
+    margin: 10px 13px;
+    font-size: 20px;
+}
+
+.follow_us p {
+    color: #7C7F81;
+    font-family: Museo;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* End follow us */

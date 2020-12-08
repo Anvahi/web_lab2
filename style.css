@@ -102,7 +102,7 @@ header {
     margin-top: 150px;
 }
 
-.naming button {
+.naming a {
     border: 2px solid #777879;
     width: 232px;
     height: 53px;
@@ -112,6 +112,7 @@ header {
     font-family: Republic;
     font-size: 13px;
     padding: 10px 45px;
+    text-decoration: none;
 }
 
 .naming .liq img {
